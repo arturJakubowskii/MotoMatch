@@ -13,6 +13,7 @@ public class Rider {
     private Integer ridingExperience; // 1 - 3
     private Integer price;
     private String motorcycleType;
+    private String driverLicenseType;
 
     public Rider() {
     }
@@ -20,12 +21,13 @@ public class Rider {
     public Rider(Integer riderHeight,
                  Integer ridingExperience,
                  Integer price,
-                 String motorcycleType) {
-
+                 String motorcycleType,
+                 String driverLicenseType) {
         this.riderHeight = riderHeight;
         this.ridingExperience = ridingExperience;
         this.price = price;
         this.motorcycleType = motorcycleType;
+        this.driverLicenseType = driverLicenseType;
     }
 
     @Override
@@ -35,6 +37,7 @@ public class Rider {
                 ", ridingExperience=" + ridingExperience +
                 ", price=" + price +
                 ", motorcycleType='" + motorcycleType + '\'' +
+                ", driverLicenseType='" + driverLicenseType + '\'' +
                 '}';
     }
 }
