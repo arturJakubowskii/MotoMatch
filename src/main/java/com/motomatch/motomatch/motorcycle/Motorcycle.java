@@ -10,6 +10,10 @@ import javax.persistence.*;
 @Entity
 @Table(name = "motorcycle")
 public class Motorcycle {
+
+    public Motorcycle() {
+    }
+
     @Id
     @SequenceGenerator(
             name = "motorcycle_sequence",
@@ -25,6 +29,7 @@ public class Motorcycle {
     /*
     Metric system only
      */
+
 
     private Long id;
     private String name;
