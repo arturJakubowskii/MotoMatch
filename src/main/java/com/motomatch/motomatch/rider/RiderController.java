@@ -23,11 +23,4 @@ public class RiderController {
          riderService.postRider(rider);
     }
 
-//    public List<Rider> getRider(){
-//         return riderService.getRider();
-//    }
-
-
-
-
 }
