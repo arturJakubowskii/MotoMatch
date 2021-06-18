@@ -18,4 +18,7 @@ public class RiderService {
         riderList.add(rider);
     }
 
+    public Rider getRider() {
+        return riderList.get(0);
+    }
 }
