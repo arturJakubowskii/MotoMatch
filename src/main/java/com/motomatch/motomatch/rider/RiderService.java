@@ -16,7 +16,9 @@ public class RiderService {
 
     public void postRider(Rider rider) {
         riderList.add(rider);
-        System.out.println(riderList.get(0).toString());
     }
 
+    public Rider getRider() {
+        return riderList.get(0);
+    }
 }

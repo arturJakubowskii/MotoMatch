@@ -16,9 +16,14 @@ public class MotorcycleController {
         this.motorcycleService = motorcycleService;
     }
 
+//    @GetMapping
+//    public List<Motorcycle> getMotorcycles(){
+//        return motorcycleService.getAll();
+//    }
+
     @GetMapping
-    public List<Motorcycle> getMotorcycles(){
-        return motorcycleService.getAll();
+    public List<Motorcycle> getMotorcyclesByDrivingLicense(String license){
+        return motorcycleService.getMotorcyclesByDrivingLicense(license);
     }
 
 

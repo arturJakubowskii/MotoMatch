@@ -171,6 +171,7 @@ public class MotorcycleConfig {
                     "A1"
             );
 
+
             motorcycleRepository.saveAll(List.of(harley, triumph, triumph1, indian,
                                         bmw, honda, yamaha, triumph2, bmwSport, yamahaSport,
                                         junak, smallBike));

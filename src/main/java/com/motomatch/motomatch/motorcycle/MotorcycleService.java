@@ -18,4 +18,8 @@ public class MotorcycleService {
     public List<Motorcycle> getAll() {
         return motorcycleRepository.findAll();
     }
+
+    public List<Motorcycle> getMotorcyclesByDrivingLicense(String license) {
+        return motorcycleRepository.findMotorcycleByDrivingLicenseType(license);
+    }
 }
