@@ -171,22 +171,10 @@ public class MotorcycleConfig {
                     "A1"
             );
 
-            Motorcycle test = new Motorcycle(
-                    "test",
-                    790,
-                    900,
-                    65,
-                    228,
-                    1,
-                    12150,
-                    9000,
-                    "Old School",
-                    "A2"
-            );
 
             motorcycleRepository.saveAll(List.of(harley, triumph, triumph1, indian,
                                         bmw, honda, yamaha, triumph2, bmwSport, yamahaSport,
-                                        junak, smallBike, test));
+                                        junak, smallBike));
         };
     }
 

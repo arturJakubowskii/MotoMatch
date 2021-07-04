@@ -29,11 +29,6 @@ public class Match {
         //test();
     }
 
-    private void test() {
-        for (Motorcycle motorcycle : motorcyclesForMatch){
-            System.out.println(motorcycle);
-        }
-    }
 
     private void matchByDrivingLicense(){
 
