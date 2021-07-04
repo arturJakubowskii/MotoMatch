@@ -11,23 +11,23 @@ import java.util.List;
 @Service
 public class MatchService {
 
-    Matcher matcher;
+    Match match;
     RiderController riderController;
     MotorcycleController motorcycleController;
 
     @Autowired
-    public MatchService(Matcher matcher,
+    public MatchService(Match match,
                         RiderController riderController,
                         MotorcycleController motorcycleController) {
-        this.matcher = matcher;
+        this.match = match;
         this.riderController = riderController;
         this.motorcycleController = motorcycleController;
     }
 
 
         public List<Motorcycle> getMatchedMotorcycles() {
-        Matcher matcher = new Matcher(riderController.getRider(), motorcycleController);
-        return matcher.getMotorcyclesForMatch();
+        Match match = new Match(riderController.getRider(), motorcycleController);
+        return match.getMotorcyclesForMatch();
     }
 
 

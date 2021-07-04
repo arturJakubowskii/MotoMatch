@@ -10,7 +10,7 @@ import java.util.List;
 
 
 @Component
-public class Matcher {
+public class Match {
 
     Rider rider;
     MotorcycleController motorcycleController;
@@ -18,16 +18,10 @@ public class Matcher {
     private List<Motorcycle> motorcyclesForMatch = new ArrayList<>(); // Main List that stores motorcycles for filtering
                                                     // according to Rider needs
 
-    public Matcher(Rider rider, MotorcycleController motorcycleController) {
+    public Match(Rider rider, MotorcycleController motorcycleController) {
         this.rider = rider;
         this.motorcycleController = motorcycleController;
     }
-
-    /*
-        Motorcycle matching is based on this pattern:
-        driving license -> riding experience -> motorcycle type
-        -> price -> height
-     */
 
 
     private void addToMatchingList(List<Motorcycle> motorcycles){
@@ -98,11 +92,6 @@ public class Matcher {
         motorcyclesForMatch.removeIf(motorcycle -> motorcycle.getPriceForUsed() > riderPrice);
     }
 
-//    private void matchByHeight(){
-//        matchByPrice();
-//        Integer riderHeight = rider.getRiderHeight() * 10; // convert riderHeight to mm
-//        motorcyclesForMatch.removeIf(motorcycle -> motorcycle.getSeatHeight() - riderHeight < 800);
-//    }
 
     private void runMatching(){
         matchByPrice();
